@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+</head>
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<body style="text-align: center;">
+    Number1:<input type="number" id="Number1" placeholder="Enter the First Number">
+    <br><br>
+    Number2:<input type="number" id="Number2" placeholder="Enter the Second Number">
+    <br><br>
+    <button onclick="myaddfunction()">Addition</button>
+   
+    <script>
+         function myaddfunction() {
+            let Number1 = document.getElementById("Number1").value;
+            let Number2 = document.getElementById("Number2").value;
+            let addresult = Number(Number1) + Number(Number2);
+            // console.log("Addition_result ", addresult)
+            let isValueSame = Number1 === Number2 ?  document.getElementById("A").innerHTML = `${Number1} + ${Number2} = ${Number1*3}`: document.getElementById("A").innerHTML = `${Number1} + ${Number2} = ${addresult}`
+           
+        }
+    </script>
+     <p id  = "A"></p>
+    </script>
+</body>
+
+</html>
